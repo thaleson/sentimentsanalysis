@@ -5,8 +5,8 @@ import time  # Importado para simular um atraso no exemplo
 # Função para carregar o modelo e o vectorizer, otimizado com cache
 @st.cache_resource
 def load_resources():
-    model = joblib.load('models/best_model.pkl')
-    vectorizer = joblib.load('models/vectorizer.pkl')
+    model = joblib.load('models/best_model_compressed.pkl')
+    vectorizer = joblib.load('models/vectorizer_compressed.pkl')
     return model, vectorizer
 
 def show():
